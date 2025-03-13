@@ -1,0 +1,40 @@
+# Pliki kompilacji i binarne
+bin/
+target/
+out/
+*.class
+
+# Pliki konfiguracyjne IDE
+*.iml
+*.ipr
+*.iws
+/.idea/
+/.vscode/
+/.settings/
+/.project
+/.classpath
+
+# Pliki Maven/Gradle
+.mvn/
+.gradle/
+build/
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+
+# Logi i pliki tymczasowe
+*.log
+*.tmp
+*.swp
+
+# Pliki zależności
+*.jar
+*.war
+*.ear
+node_modules/
+
+# Dane użytkownika
+*.env
+*.key
+*.pem
