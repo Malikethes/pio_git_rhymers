@@ -1,14 +1,10 @@
 package edu.kis.vh.nursery;
 
-<<<<<<< HEAD:src/main/java/edu/kis/vh/nursery/defaultCountingOutRhymer.java
-public class defaultCountingOutRhymer {
+public class DefaultCountingOutRhymer {
 	
 	private static final int CAPACITY = 12;
     private static final int EMPTY_INDEX = -1;
     private static final int FULL_INDEX = 11;
-=======
-public class DefaultCountingOutRhymer {
->>>>>>> 0ec0a8d (4.1 poprawa nazw klas):src/main/java/edu/kis/vh/nursery/DefaultCountingOutRhymer.java
 
     private int[] numbers = new int[CAPACITY];
     private int total = EMPTY_INDEX;
