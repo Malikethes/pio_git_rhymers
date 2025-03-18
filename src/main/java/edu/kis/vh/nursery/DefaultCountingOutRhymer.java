@@ -28,10 +28,6 @@ public class DefaultCountingOutRhymer {
 		return total;
 	}
 
-	public void setTotal(int total) {
-		this.total = total;
-	}
-
 	protected int peekaboo() {
         if (callCheck()) {
             return EMPTY_INDEX;
