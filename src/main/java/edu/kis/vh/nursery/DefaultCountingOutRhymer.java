@@ -24,7 +24,11 @@ public class DefaultCountingOutRhymer {
         return total == FULL_INDEX;
     }
 
-    protected int peekaboo() {
+    public int getTotal() {
+		return total;
+	}
+
+	protected int peekaboo() {
         if (callCheck()) {
             return EMPTY_INDEX;
         }
