@@ -24,7 +24,15 @@ public class DefaultCountingOutRhymer {
         return total == FULL_INDEX;
     }
 
-    protected int peekaboo() {
+    public int getTotal() {
+		return total;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}
+
+	protected int peekaboo() {
         if (callCheck()) {
             return EMPTY_INDEX;
         }
