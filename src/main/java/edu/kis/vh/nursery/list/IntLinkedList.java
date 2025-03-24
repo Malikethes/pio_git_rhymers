@@ -18,6 +18,7 @@ public class IntLinkedList {
         return last == null;
     }
 
+    // TODO: Implementacja pełności - warto dodać kontrolę na rozmiar listy
     public boolean isFull() {
         return false;
     }

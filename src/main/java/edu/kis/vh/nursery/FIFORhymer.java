@@ -21,7 +21,7 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
     @Override
     public int countOut() {
         while (!callCheck())
-            temp.countIn(super.countOut());
+            temp.countIn(super.countOut());// TODO: Zmniejszenie zagnieżdżenia pętli
 
         int result = temp.countOut();
 
