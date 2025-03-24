@@ -74,5 +74,21 @@ public class RhymersJUnitTest { // dokonano walidacji testami jednostkowymi
         result = rhymer.countOut();
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
     }
+    
+    public void testFIFORhymerCount() {
+        DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
+        final int EMPTY_STACK_VALUE = -1;
+
+        int result = rhymer.countOut();
+        Assert.assertEquals(EMPTY_STACK_VALUE, result);
+
+        int testValue = 4;
+        rhymer.countIn(testValue);
+
+        result = rhymer.countOut();
+        Assert.assertEquals(testValue, result);
+        result = rhymer.countOut();
+        Assert.assertEquals(EMPTY_STACK_VALUE, result);
+    }
 
 }
