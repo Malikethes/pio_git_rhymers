@@ -18,6 +18,7 @@ public class IntLinkedList {
         return last == null;
     }
 
+    // TODO: Implementacja pełności - warto dodać kontrolę na rozmiar listy
     public boolean isFull() {
         return false;
     }
@@ -34,6 +35,41 @@ public class IntLinkedList {
         int ret = last.getValue();
         last = last.getPrev();
         return ret;
+    }
+    
+    private class Node {
+        private int value;
+        private Node prev;
+    	private Node next;
+
+        public Node(int valueTemp) {
+            setValue(valueTemp);
+        }
+
+    	public Node getNext() {
+    		return next;
+    	}
+
+    	public void setNext(Node next) {
+    		this.next = next;
+    	}
+
+    	public Node getPrev() {
+    		return prev;
+    	}
+
+    	public void setPrev(Node prev) {
+    		this.prev = prev;
+    	}
+
+    	public int getValue() {
+    		return value;
+    	}
+
+    	public void setValue(int value) {
+    		this.value = value;
+    	}
+
     }
 
 }
